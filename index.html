@@ -556,9 +556,7 @@ function loginp(){
     var mobile2=mobile.value
     var ki=profile.src
    
-    if(value.value.length<3||mobile.value.length<10){
-        alert('Please Enter atleast 3 words in name and 10 words in mobile')
-    }else{
+    
         firebase.database().ref('kks2').push().set({
             'name2':name2,
             'mobile2':mobile2,
@@ -573,7 +571,7 @@ function loginp(){
         localStorage.setItem('kavya2',kavya2)
         
         document.querySelector('.loginarea').style.display='none'
-    }
+    
 }
 function mh(){
    
